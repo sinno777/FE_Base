@@ -1,0 +1,31 @@
+.navbarSN {
+  .button--white {
+    @include stylesButtons(
+      $cl-gray-0,
+      $cl-white-0,
+      $cl-black-light,
+      $fs-0,
+      $fw-1,
+      $pd-0 + 1,
+      $pd-0 + 2
+    );
+    &:hover {
+      @include hover_btn($cl-black-0, transparent, $cl-black-0);
+    }
+  }
+
+  .button--red {
+    @include stylesButtons(
+      $cl-white-0,
+      $cl-red-0,
+      $cl-red-0,
+      $fs-0,
+      $fw-1,
+      $pd-0 + 1,
+      $pd-0 + 2
+    );
+    &:hover {
+      @include hover_btn($cl-white-0, $cl-red-1, $cl-red-1);
+    }
+  }
+}

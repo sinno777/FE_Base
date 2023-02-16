@@ -1,0 +1,7 @@
+chil: position: absoulute
+parent: relative
+==> Theory is chil will active into parent most mear
+
+positon:relative alway z-index so it appear in element
+
+overflow: hiden => into parent so when element out over that it will hide

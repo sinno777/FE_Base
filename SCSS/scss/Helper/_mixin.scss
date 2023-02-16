@@ -1,0 +1,21 @@
+@mixin styles($cl, $fs, $fw) {
+  color: $cl;
+  font-size: $fs;
+  font-weight: $fw;
+}
+
+@mixin stylesButtons($cl, $bg-cl, $border, $fs, $fw, $pd-y, $pd-x) {
+  color: $cl;
+  background-color: $bg-cl;
+  border: 1xp solid $border;
+  font-size: $fs;
+  font-weight: $fw;
+  padding: $pd-y $pd-x;
+  cursor: pointer;
+}
+
+@mixin hover_btn($cl-hv, $bg-hv, $border-hv){
+    color: $cl-hv;
+    background-color: $bg-hv;
+    border: 1xp solid $border-hv;
+}

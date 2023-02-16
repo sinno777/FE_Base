@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.43;
+  color: #29303b;
+  background-color: #fff;
+}
+
+.navbarSN {
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+}
+.navbarSN .navbarSN--left {
+  display: flex;
+  align-items: center;
+}
+.navbarSN .navbarSN--left .navbarSN__logoImg--link {
+  flex-grow: 1;
+  margin-right: 0;
+  text-align: center;
+}
+.navbarSN .navbarSN--left img {
+  width: 110px;
+}
+.navbarSN .navbarSN--left .navbarSN__categories {
+  text-align: center;
+  flex-grow: 1;
+  cursor: pointer;
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: normal;
+}
+.navbarSN .navbarSN--left .navbarSN__search {
+  flex-grow: 8;
+}
+.navbarSN .navbarSN--left .navbarSN__search .input-group {
+  background-color: #f2f3f5;
+}
+.navbarSN .navbarSN--left .navbarSN__search .input-group .form-control {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  transition: none;
+}
+.navbarSN .navbarSN--left .navbarSN__search .input-group .form-control:focus {
+  background-color: #fff;
+  border-top-color: #dedfe0;
+  border-bottom-color: #dedfe0;
+  border-left-color: #dedfe0;
+}
+.navbarSN .navbarSN--left .navbarSN__search .input-group .form-control:focus + .input-group-append .input-group-text {
+  background-color: #fff;
+  border-top-color: #dedfe0;
+  border-bottom-color: #dedfe0;
+  border-right-color: #dedfe0;
+  color: #ec5252;
+}
+.navbarSN .navbarSN--left .navbarSN__search .input-group .form-control:focus + .input-group-append .input-group-text:hover {
+  color: #fff;
+  background-color: #ec5252;
+}
+.navbarSN .navbarSN--left .navbarSN__search .input-group .input-group-append .input-group-text {
+  background-color: transparent;
+  border-color: transparent;
+  color: #ec5252;
+}
+.navbarSN .navbarSN--left .navbarSN__search .input-group .input-group-append .input-group-text:hover {
+  color: #fff;
+  background-color: #ec5252;
+}
+.navbarSN .navbarSN--right .navbar-nav {
+  align-items: center;
+  justify-content: space-between;
+}
+.navbarSN .navbarSN--right .navbar-nav .nav-item .nav-link {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: 400;
+}
+.navbarSN .navbarSN--right .navbar-nav .nav-item .navbarSN_cart--icon {
+  font-size: 27px;
+  text-align: center;
+  line-height: 50px;
+}
+.navbarSN .navbarSN--right .navbar-nav .navbarSN_right--content {
+  padding: 4px 3px;
+}
+.navbarSN .navbarSN--right .navbar-nav .navbarSN_right--content:hover {
+  background-color: rgba(20, 23, 28, 0.05);
+}
+.navbarSN .navbarSN--right .navbar-nav .navbarSN_right--content:hover a {
+  color: #ec5252;
+}
+.navbarSN .navbarSN--right .navbar-nav .navbarSN_cart {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 25px;
+}
+.navbarSN .navbarSN--right .navbar-nav .navbarSN_cart:hover {
+  background-color: rgba(20, 23, 28, 0.05);
+}
+
+.navbarSN .button--white {
+  color: #686f7a;
+  background-color: #fff;
+  border: 1xp solid #505763;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 11px 12px;
+  cursor: pointer;
+}
+.navbarSN .button--white:hover {
+  color: #29303b;
+  background-color: transparent;
+  border: 1xp solid #29303b;
+}
+.navbarSN .button--red {
+  color: #fff;
+  background-color: #ec5252;
+  border: 1xp solid #ec5252;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 11px 12px;
+  cursor: pointer;
+}
+.navbarSN .button--red:hover {
+  color: #fff;
+  background-color: #521822;
+  border: 1xp solid #521822;
+}/*# sourceMappingURL=main.css.map */
