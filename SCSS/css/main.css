@@ -76,6 +76,38 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.navbarSN .navbarSN--right .navbar-nav .nav-item {
+  position: relative;
+}
+.navbarSN .navbarSN--right .navbar-nav .nav-item .overlay {
+  display: none;
+  background-color: #fff;
+  width: 330px;
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  border-top: 1px solid rgba(20, 23, 28, 0.05);
+  box-shadow: 0 4px 16px rgba(20, 23, 28, 0.25);
+}
+.navbarSN .navbarSN--right .navbar-nav .nav-item .overlay ::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  display: block;
+  border-top: 1px solid rgba(20, 23, 28, 0.05);
+  border-left: 1px solid rgba(20, 23, 28, 0.05);
+  position: absolute;
+  top: -9px;
+  right: 10%;
+  transform: rotate(45deg);
+}
+.navbarSN .navbarSN--right .navbar-nav .nav-item:hover .overlay {
+  display: block;
+  z-index: 1000;
+}
 .navbarSN .navbarSN--right .navbar-nav .nav-item .nav-link {
   color: #686f7a;
   font-size: 13px;

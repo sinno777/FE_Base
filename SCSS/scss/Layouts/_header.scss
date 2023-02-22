@@ -38,7 +38,7 @@
               border-top-color: $cl-gray-4;
               border-bottom-color: $cl-gray-4;
               border-right-color: $cl-gray-4;
-              
+
               color: $cl-red-0;
               &:hover {
                 color: $cl-white-0;
@@ -61,44 +61,76 @@
       }
     }
   }
-  .navbarSN--right{
-    .navbar-nav{
+  .navbarSN--right {
+    .navbar-nav {
       align-items: center;
       justify-content: space-between;
       .nav-item {
-        .nav-link{
+        position: relative;
+        .overlay {
+          display: none;
+          background-color: #fff;
+          width: 330px;
+          padding: 20px;
+          text-align: center;
+          position: absolute;
+          top: 60px;
+          right: 0;
+          border-top: 1px solid rgba(20, 23, 28, 0.05);
+          box-shadow: 0 4px 16px rgb(20 23 28 / 25%);
+          ::before {
+            content: '';
+            width: $fs-0;
+            height: $fs-0;
+            background-color: $cl-white-0;
+            display: block;
+            border-top: 1px solid $cl-gray-1;
+            border-left: 1px solid $cl-gray-1;
+            position: absolute;
+            top: -9px;
+            right: 10%;
+            transform: rotate(45deg);
+          }
+        }
+
+        &:hover {
+          .overlay {
+            display: block;
+            z-index: 1000;
+          }
+        }
+        .nav-link {
           @include styles($cl-gray-0, $fs-1, $fw-1 - 200);
         }
-        .navbarSN_cart--icon{
+        .navbarSN_cart--icon {
           // font-size: $fs-3 + 2;
           font-size: $fs-5 + 3;
-          
+
           // border: 1px solid red;
           text-align: center;
           line-height: 50px;
         }
       }
-      .navbarSN_right--content{
+      .navbarSN_right--content {
         padding: $fs-pd - 1 $fs-pd - 2;
-        &:hover{
+        &:hover {
           background-color: rgba(20, 23, 28, 0.05);
-          a{
+          a {
             color: $cl-red-0;
           }
         }
       }
-      .navbarSN_cart{
+      .navbarSN_cart {
         width: 50px;
         height: 50px;
         border-radius: 50%;
         line-height: 25px;
 
         // border: 1px solid blue;
-        &:hover{
+        &:hover {
           background-color: rgba(20, 23, 28, 0.05);
         }
       }
     }
   }
 }
-
