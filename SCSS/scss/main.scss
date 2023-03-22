@@ -1,15 +1,21 @@
-@import '../scss/Helper/variables';
-@import '../scss/Helper/mixin';
+@import "../scss/Helper/variables";
+@import "../scss/Helper/mixin";
+@import "../scss/Helper/extend";
 
 // VENDOR
 
+@import "../scss/Base/reset";
+@import "../scss/Base/customize";
 
-@import '../scss/Base/reset';
-@import '../scss/Base/customize';
+@import "../scss/Layouts/header";
+@import "../scss/Layouts/footer";
+@import "../scss/Layouts/cover";
+@import "../scss/Layouts/intro";
+@import "../scss/Layouts/courses";
+@import "../scss/Layouts/viewing";
+@import "../scss/Layouts/banner";
 
-@import '../scss/Layouts/header';
-@import '../scss/Layouts/footer';
+@import "../scss/Component/button";
+@import "../scss/Component/card";
 
-@import '../scss/Component/button';
-
-@import '../scss/Pages/home';
+@import "../scss/Pages/home";

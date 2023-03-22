@@ -1,0 +1,37 @@
+.card {
+  height: $fs-7;
+  .card-body {
+    padding: 1rem;
+    .card-title {
+      @include styles($cl-black-0, $fs-0, $fw-1);
+    }
+    .card-text {
+      @include styles($cl-gray-0, $fs-1 - 1, $fw-0);
+      margin: $fs-pd 0;
+    }
+    .cart__start {
+      i {
+        @include styles($cl-yellow-0, $fs-1 - 1, $fw-3);
+      }
+      .cart__rate {
+        @include styles($cl-gray-0, $fs-1, $fw-1);
+      }
+      .cart__total {
+        @include styles($cl-gray-0, $fs-1, $fw-0);
+      }
+    }
+    .cart__price {
+      text-align: right;
+      padding: $pd-2 + 2 0;
+      span {
+        &:first-of-type {
+          @include styles($cl-gray-0, $fs-1, $fw-0);
+          text-decoration: line-through;
+        }
+        &:last-of-type {
+          @include styles($cl-black-0, $fs-0, $fw-1);
+        }
+      }
+    }
+  }
+}

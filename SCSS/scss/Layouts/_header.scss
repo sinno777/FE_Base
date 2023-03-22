@@ -19,46 +19,7 @@
     }
     .navbarSN__search {
       flex-grow: 8;
-      .input-group {
-        background-color: $cl-white-cream;
-        .form-control {
-          background-color: transparent;
-          border-color: transparent;
-          box-shadow: none;
-          transition: none;
-          &:focus {
-            background-color: $cl-white-0;
-            border-top-color: $cl-gray-4;
-            border-bottom-color: $cl-gray-4;
-            border-left-color: $cl-gray-4;
-          }
-          &:focus + .input-group-append {
-            .input-group-text {
-              background-color: $cl-white-0;
-              border-top-color: $cl-gray-4;
-              border-bottom-color: $cl-gray-4;
-              border-right-color: $cl-gray-4;
-
-              color: $cl-red-0;
-              &:hover {
-                color: $cl-white-0;
-                background-color: $cl-red-0;
-              }
-            }
-          }
-        }
-        .input-group-append {
-          .input-group-text {
-            background-color: transparent;
-            border-color: transparent;
-            color: $cl-red-0;
-            &:hover {
-              color: $cl-white-0;
-              background-color: $cl-red-0;
-            }
-          }
-        }
-      }
+      @include styles_formSearch($cl-white-cream,$cl-white-0,$cl-gray-4);
     }
   }
   .navbarSN--right {

@@ -1,3 +1,9 @@
+.cover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +15,31 @@ body {
   line-height: 1.43;
   color: #29303b;
   background-color: #fff;
+}
+
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
+  color: #007791;
+  background-color: #fff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.1);
+  font-size: 24px;
+  position: absolute;
+  top: 35%;
+}
+.owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel .owl-nav button.owl-next:hover {
+  color: #007791;
+  background-color: #fff;
+}
+.owl-carousel .owl-nav button.owl-prev:focus, .owl-carousel .owl-nav button.owl-next:focus {
+  outline: none;
+}
+.owl-carousel .owl-nav button.owl-prev {
+  left: -30px;
+}
+.owl-carousel .owl-nav button.owl-next {
+  right: -30px;
 }
 
 .navbarSN {
@@ -39,6 +70,7 @@ body {
 }
 .navbarSN .navbarSN--left .navbarSN__search .input-group {
   background-color: #f2f3f5;
+  border-radius: 4px;
 }
 .navbarSN .navbarSN--left .navbarSN__search .input-group .form-control {
   background-color: transparent;
@@ -137,31 +169,247 @@ body {
   background-color: rgba(20, 23, 28, 0.05);
 }
 
-.navbarSN .button--white {
+.cover {
+  background-image: url("../../img/cover.jpg");
+  height: 500px;
+  position: relative;
+}
+.cover .cover_content {
+  max-width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  transform: translateY(-50%);
+}
+.cover .cover_content h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+}
+.cover .cover_content p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+}
+.cover .cover_content .input-group {
+  background-color: #fff;
+  border-radius: 4px;
+}
+.cover .cover_content .input-group .form-control {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  transition: none;
+}
+.cover .cover_content .input-group .form-control:focus {
+  background-color: #fff;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+.cover .cover_content .input-group .form-control:focus + .input-group-append .input-group-text {
+  background-color: #fff;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  color: #ec5252;
+}
+.cover .cover_content .input-group .form-control:focus + .input-group-append .input-group-text:hover {
+  color: #fff;
+  background-color: #ec5252;
+}
+.cover .cover_content .input-group .input-group-append .input-group-text {
+  background-color: transparent;
+  border-color: transparent;
+  color: #ec5252;
+}
+.cover .cover_content .input-group .input-group-append .input-group-text:hover {
+  color: #fff;
+  background-color: #ec5252;
+}
+
+.intro {
+  background: linear-gradient(-45deg, #ec5252, #6e1a52);
+  padding: 20px;
+}
+.intro .intro__content {
+  width: 82%;
+  margin: 0 auto;
+}
+.intro .intro__content .intro_items {
+  display: flex;
+  align-items: center;
+}
+.intro .intro__content .intro__icon {
+  font-size: 50px;
+  color: #fff;
+  margin-right: 25px;
+}
+.intro .intro__content .intro__details p {
+  margin-bottom: 0;
+}
+.intro .intro__content .intro__details p:first-of-type {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+}
+.intro .intro__content .intro__details p:last-of-type {
+  color: #fff;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.course {
+  margin: 25px 0;
+}
+.course .courses__content {
+  width: 90%;
+  margin: auto;
+}
+.course .courses__content .courses__left {
+  background-color: rgba(20, 23, 28, 0.05);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+}
+.course .courses__content .courses__left h2 {
+  color: #29303b;
+  font-size: 19px;
+  font-weight: normal;
+}
+.course .courses__content .courses__left p {
+  margin: 0 0 1rem 0;
+}
+.course .courses__content #myTab {
+  margin-bottom: 25px;
+}
+.course .courses__content #myTab .nav-link {
+  color: #29303b;
+  font-size: 15px;
+  font-weight: normal;
+}
+.course .courses__content #myTab .nav-link:hover {
+  border: 1px solid transparent;
+  color: #007791;
+  font-size: 15px;
+  font-weight: normal;
+}
+.course .courses__content #myTab .nav-link.active {
+  border: none;
+  border-bottom: 5px solid #007791;
+}
+
+.viewing {
+  padding: 21px 0;
+}
+.viewing .viewing__content {
+  width: 90%;
+  margin: auto;
+}
+.viewing .viewing__content h2 {
+  font-size: 20px;
+}
+
+.banner {
+  background: url(../img/udemy-logo-semi-transparent.svg) 0/30% no-repeat, linear-gradient(61deg, #6e1a52, #76c5d6 41%);
+  background-blend-mode: overlay;
+  height: 325px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.banner .container h2 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: normal;
+}
+.banner .container p {
+  color: #fff;
+  margin-bottom: 0;
+}
+.banner .container button {
+  margin: 10px 0;
+}
+
+.button--white {
   color: #686f7a;
   background-color: #fff;
-  border: 1xp solid #505763;
+  border: #505763;
   font-size: 15px;
   font-weight: 600;
   padding: 11px 12px;
   cursor: pointer;
+  border-radius: 5px;
 }
-.navbarSN .button--white:hover {
+.button--white:hover {
   color: #29303b;
   background-color: transparent;
   border: 1xp solid #29303b;
 }
-.navbarSN .button--red {
+
+.button--red {
   color: #fff;
   background-color: #ec5252;
-  border: 1xp solid #ec5252;
+  border: #ec5252;
   font-size: 15px;
   font-weight: 600;
   padding: 11px 12px;
   cursor: pointer;
+  border-radius: 5px;
 }
-.navbarSN .button--red:hover {
+.button--red:hover {
   color: #fff;
   background-color: #521822;
   border: 1xp solid #521822;
+}
+.button--red:focus {
+  outline: none;
+}
+
+.card {
+  height: 275px;
+}
+.card .card-body {
+  padding: 1rem;
+}
+.card .card-body .card-title {
+  color: #29303b;
+  font-size: 15px;
+  font-weight: 600;
+}
+.card .card-body .card-text {
+  color: #686f7a;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 5px 0;
+}
+.card .card-body .cart__start i {
+  color: #f4c150;
+  font-size: 12px;
+  font-weight: 900;
+}
+.card .card-body .cart__start .cart__rate {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: 600;
+}
+.card .card-body .cart__start .cart__total {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: normal;
+}
+.card .card-body .cart__price {
+  text-align: right;
+  padding: 7px 0;
+}
+.card .card-body .cart__price span:first-of-type {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: normal;
+  text-decoration: line-through;
+}
+.card .card-body .cart__price span:last-of-type {
+  color: #29303b;
+  font-size: 15px;
+  font-weight: 600;
 }/*# sourceMappingURL=main.css.map */

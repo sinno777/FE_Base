@@ -7,15 +7,60 @@
 @mixin stylesButtons($cl, $bg-cl, $border, $fs, $fw, $pd-y, $pd-x) {
   color: $cl;
   background-color: $bg-cl;
-  border: 1xp solid $border;
+  border: $border;
   font-size: $fs;
   font-weight: $fw;
   padding: $pd-y $pd-x;
   cursor: pointer;
+  border-radius: 5px;
 }
 
-@mixin hover_btn($cl-hv, $bg-hv, $border-hv){
-    color: $cl-hv;
-    background-color: $bg-hv;
-    border: 1xp solid $border-hv;
+@mixin hover_btn($cl-hv, $bg-hv, $border-hv) {
+  color: $cl-hv;
+  background-color: $bg-hv;
+  border: 1xp solid $border-hv;
+}
+
+@mixin styles_formSearch($cl-bg, $cl-bg-focus, $cl-border-focus) {
+  .input-group {
+    background-color: $cl-bg;
+    border-radius: 4px;
+    .form-control {
+      background-color: transparent;
+      border-color: transparent;
+      box-shadow: none;
+      transition: none;
+      &:focus {
+        background-color: $cl-bg-focus;
+        border-top-color: $cl-border-focus;
+        border-bottom-color: $cl-border-focus;
+        border-left-color: $cl-border-focus;
+      }
+      &:focus + .input-group-append {
+        .input-group-text {
+          background-color: $cl-bg-focus;
+          border-top-color: $cl-border-focus;
+          border-bottom-color: $cl-border-focus;
+          border-right-color: $cl-border-focus;
+
+          color: $cl-red-0;
+          &:hover {
+            color: $cl-white-0;
+            background-color: $cl-red-0;
+          }
+        }
+      }
+    }
+    .input-group-append {
+      .input-group-text {
+        background-color: transparent;
+        border-color: transparent;
+        color: $cl-red-0;
+        &:hover {
+          color: $cl-white-0;
+          background-color: $cl-red-0;
+        }
+      }
+    }
+  }
 }
